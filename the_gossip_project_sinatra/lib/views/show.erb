@@ -1,0 +1,16 @@
+<html>
+ <head>
+   <title>Page POTIN</title>
+ </head>
+ <body>
+  <h2>PAGE POTIN !</h2>
+   <p><% potins.each do |potin| %>
+       <p> Voici le potin n° <%= params[:id]%><br/>
+       Son auteur : <%= potin.author %><br/>
+       Le contenu du potin : <%= potin.content %>
+       </p>
+   <% end %>
+   </p>
+   <a href="/">Lien pour revenir à la page des potins</a>
+ </body>
+</html> 
